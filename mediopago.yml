@@ -5,12 +5,12 @@ spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     password: 12345678
-    url: jdbc:mysql//localhost:3306/crudcloud?servertimezone=UTC
+    url: jdbc:mysql://localhost:3306/crudcloud?servertimezone=UTC
     username: root
   jpa:
     hibernate:
       ddl-auto: update
-      database-plataform: org.hibernate.dialect.MySQLDialect
+      database-platform: org.hibernate.dialect.MySQLDialect
   cloud:
     config:
       uri: http://localhost:8860
