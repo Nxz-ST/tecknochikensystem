@@ -1,21 +1,7 @@
 server:
-  port: ${PORT:8867}
-message: Configuracion de registro en el servidor levantado!
-spring:
-  datasource:
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    password: 123456789
-    url: jdbc:mysql://localhost:3306/crudzevaz?serverTimezone=UTC
-    username: root
-  jpa:
-    hibernate:
-      ddl-auto: update
-      database-platform: org.hibernate.dialect.MySQLDialect
-  cloud:
-    config:
-      uri: http://localhost:8860
+  port: ${PORT:8850}
 eureka:
   client:
     fetch-registry: false
-    registre-with-eureka: false
-#message: Servicio de registro y descrubimiento levantado en el servidor!
+    register-with-eureka: false
+#message:Servicio de registro y descubrimiento levantado en el servidor
